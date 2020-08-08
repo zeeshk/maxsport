@@ -25,4 +25,5 @@ Route::get('register','Auth\registerMerchantController@register_index');
 Route::get('register/{id}/{fcmid}','Auth\registerMerchantController@register_merchant');
 Route::post('registerApi','Auth\registerMerchantController@register_merchant_post');
 Route::post('registerApis','Auth\registerMerchantController@register_merchant_post');
-Route::post('api/register','Auth\registerMerchantController@register_merchant_post');
+//Route::post('api/register','Auth\registerMerchantController@register_merchant_post');
+Route::post('api/register_merchant','Auth\registerMerchantController@api_register_merchant');
